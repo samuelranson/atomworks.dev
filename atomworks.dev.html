@@ -1,22 +1,122 @@
 
-</html>
-<header>
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
 <title>Atomworks - Applied Intelligence</title>
-</header>
-<body>
-<h1>Atomworks - Applied Intelligence</h1>
-<h2>Welcome</h2>
-<p>We are an organisation deticated to the following fields</p>
+<meta charset="UTF-8">
+<!-- Internal CCS for a single HTM page as shown below -->
+<style>
+h3 {background-color: blue;}
+h4 {color: red;}
+body {color: white; background-color: black;}
+</style>
+<!-- externally linked stylesheet below, note : inline styles override external and internal style sheets -->
+<link rel="stylesheet" type="text/css" href="atomworks.dev.css">
+</head>
+
+<body style="background-color:black;">
+<!-- font size added, not sure whether this comes under CCS in future *update* color added with correct syntax -->
+<h1 style="font-size:36px;color:lightblue;font-family:poppins">Atomworks - Applied Intelligence</h1>
+<h2 style="font-family:poppins;font-size:27px">Welcome</h2>
+<img src="https://media.giphy.com/media/G6ndlO5IggWIM/giphy.gif" style="height:200px alt="Atom Animation File"
+<!-- important! font size value set in percentage as opposed to px, maybe others, check -->
+<p style="font-family:poppins;font-size:18px;"><b>We are an organisation deticated to the following fields :</b></p>
+
 <!-- Unsure whether to break this sentance with the ordered list or whether to join it with the second paragraph -->
-<ol>
-  <li>Search Engine Optimisation</li>
-  <li>Web Development</li>
-  <li>Software Engineering</li>
-  <li>Machine Learning</li>
-<p>We charge value based pricing, this means we charge based on the effort
-  required to reach an optimal position on page one for SEO, guarenteed.
-We charge very attractive rates for super advanced Web Development services
-and can render Software Engineering and Machine Learning services as well.</p>
+<ol style="font-family:poppins;font-size:18px;">
+  <!-- bookmark link added, do the same for a bookmark on another page with <a href="html_demo.html#C4">Jump to Chapter 4</a> -->
+  <li id="BM1"> <A href="#BM1">Search Engine Optimisation</a></li>
+  <!-- HTML formatting employed below -->
+  <li><em>Web Development</em></li>
+  <li><strong>Software Engineering</strong></li>
+  <li><i>Machine Learning</i></li>
+</ol>
+
+<p>Click above title to visit relevant section</p>
+
+<p style="font-family:poppins;border:2px solid rgb(255, 165, 0);">We charge value based pricing, this means we charge based on the effort
+<!-- Anchor used to transport user to the section of the page that contains the SEO information, will need to
+required function to make it work -->
+required to reach an <sup>optimal</sup> <sub>position</sub> on page one for <a href="atomworks.dev.html#anchor1">SEO</a>, guarenteed.
+We charge very <mark>attractive</mark> rates for <del>super</del> advanced  <a href="atomworks.dev.html#anchor2">Web Development</a> services
+and can render Software Engineering and Machine Learning services <ins>also.</ins>
+</p>
+
+<!-- ID tag added successfully -->
+<address id="p1" >
+Created by Samuel Ranson<br>
+1 Example Street<br>
+Example Land<br>
+Australia
+</address>
+<hr>
+
+<h2 style="font-family:poppins;font-size:27px">Search Engine Optimisation</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/PageRanks-Example.svg/1024px-PageRanks-Example.svg.png" alt="Search Engine Optimisation Diagram" style="width:400px;">
+<p style="font-family:poppins;font-size:18px;border:2px solid #0000ff;">Our Search Engine Optimisation is geared for success. We guarentee page one results with you from
+the start with a custom tailored package to fit your timeline : budget. We price based on the agreed outcome and if we are unable to deliver the result
+we will remunerate you a large portion of the contract : three thirds the value.
+<p style="font-family:poppins;font-size:18px;">"We are a leader in the Search Engine Optimisation space, we endeavour to deliver state of <thead>
+art techniques to drive maximum outcome for our clients" - Samuel Ranson, CEO
+</p>
+<p style="font-family:poppins;font-size:18px;">Enter email to reveal information on best practice SEO, valued at $99
 <br>
-<h2></h2>
+<!-- class implemented then retracted for global settings with id tag "linkalternative" added :D -->
+<a href="bestpracticeos.png" title="SEO Best Practices - Original Size 12.32MB" target="_blank">Original Size 12.32MB</a> or
+<a target="_self" id="linkalternative" href="bestpracticeop.png">Optimised Size 3.76MB</a>
+<br>
+<br>
+<!-- alternative button style added with inline styling -->
+<a target="_parent" style="background-color: #f44336;color: white;padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;" href="bestpracticeos.png">Original Size 12.32MB</a> or
+<a target="_top" style="background-color: #f44336;color: white;padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;" href="bestpracticeop.png">Optimised Size 3.76MB</a>
+</p>
+<br>
+<hr>
+
+<h2 style="font-family:poppins;font-size:27px">Web Development</h2>
+<p style="font-family:poppins;font-size:18px;border:2px solid rgba(255, 99, 71, 0.5)">Attractive Web Development for the 21<sup>st</sup> Century is our calling. We marry highly logical code to a state of the
+art visual feast for your end user.
+<p style="font-family:poppins;font-size:18px;">"We are a leader in the Search Engine Optimisation space, we endeavour to deliver state of <thead>
+art techniques to drive maximum outcome for our clients" - Samuel Ranson, CEO
+<hr>
+
+<h2>Software Engineering</h2>
+<!-- class added in HTML document with corresponding definement in CSS document -->
+<p class="class1"> I am really enjoying coding and see myself become an avid software engineer. The potential is limitless with consistant learning coupled with strong rewards for performance
+<!-- external references 'full html link', located in folder 'href="/html/atomworks.dev.css"' located in same folder 'href="atomworks.dev.css"' -->
 </body>
+<hr>
+
+<h2 style="font-family:poppins;font-size:27px">Machine Learning</h2>
+<p style="font-family:poppins;font-size:18px;">We offer a range of machine learning services including model optimisation via Google TPU Cloud and are actively contributing
+  to the field. We see this as the future of our organisation which limitless potential
+<hr>
+
+<h2 style="font-family:poppins;font-size:27px">Pricing</h2>
+<!-- use colspan to set column width, 1x, 2x use rowspan for the same but with rows -->
+<table style="width:100%;font-family:poppins;font-size:18px;">
+<tr>
+  <th>Project Size</th>
+  <th>Search Engine Optimisation</th>
+  <th>Web Development</th>
+  <th>Software Engineering</th>
+  <th>Machine Learning</th>
+<br>
+<tr>
+  <th>Basic
+  <th>$1000 PM
+  <th>$2999
+  <th>$2999
+  <th>$2999
+<tr>
+  <th>Standard
+  <th>$2000 PM
+  <th>$4999
+  <th>$4999
+  <th>$4999
+
+  <!-- spare code : <ol type="I" style="font-family:poppins;font-size:18px;">
+  <li>Top</li>
+  <li>Search Engine Optimisation</li>
+  <li>Web Development</li> -->
