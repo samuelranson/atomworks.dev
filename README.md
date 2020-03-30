@@ -1,2 +1,2 @@
-# atomworks.dev
-atomworks.dev
+# samuelranson.dev
+samuelranson.dev
